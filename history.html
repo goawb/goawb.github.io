@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body{text-align: center;}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif; 
+    background-color: #FFFFFF; 
+    color: #212529; 
+    line-height: 1.6; 
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.container {
+    max-width: 1140px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #e9ecef; 
+}
+
+header .container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: 700; 
+}
+
+header nav ul {
+    list-style: none; 
+    display: flex; 
+    gap: 25px; 
+}
+
+header nav a {
+    font-size: 16px;
+    font-weight: 400; 
+    transition: color 0.3s ease; 
+}
+
+header nav a:hover {
+    color: #FF4500; 
+}
+
+/* 현재 페이지 표시 (나중에 다른 페이지 만들 때 사용) */
+header nav a.active {
+    color: #FF4500;
+    font-weight: 700;
+}
+
+h2{color: #FF4500;}
+
+.history-container {
+            display:flex; 
+            justify-content: center;
+            align-items: center;
+            gap: 50px; 
+            margin-bottom: 60px;
+            margin: 0 auto;
+        }
+
+table, tr, th, td{
+            border: dotted 2px #ffffff;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+
+
+footer {
+    padding: 40px 0;
+    background-color: #f8f9fa; 
+    text-align: center;
+    color: #6c757d;
+    font-size: 14px;
+    border-top: 1px solid #e9ecef;
+}
+
+
+@media (max-width: 768px) {
+    .guide .container {
+        flex-direction: column; 
+    }
+    .guide-box {
+        width: 100%; 
+    }
+    .hero-title {
+        font-size: 60px; 
+    }
+}
+    </style>
+    <title>Design 101</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Design 101</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="fundamentals.html" >Fundamentals</a></li>
+                    <li><a href="history.html" class="active">History</a></li>
+                    <li><a href="process.html">Process</a></li>
+                    <li><a href="casestudy.html">Case study</a></li>
+                    <li><a href="library.html">Library</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br><br>
+
+
+<h2>Design History</h2><br><br><br>
+
+        <div class="history-container">
+
+        <table>
+        <tr>
+        <th colspan="1"><img src="산업혁명.jpg"  width="300" height="200"></th>
+        <th colspan="1"><br><h3>1760 - 1840s</h3></th>
+        <th colspan="1">디자인이 순수 미술에서 분리되어 '산업'과 결합하기 시작한 시기. <br>18세기 중후반 시작된 산업혁명으로 공장제 대량생산 시대가 열렸습니다. 
+        <br>제품의 생산 속도는 빨라졌지만, 수공예 시대의 섬세함과 <br>미적 가치를 잃고 품질이 조악해지는 문제가 발생했습니다.</th></tr><br><br>
+
+        <tr>
+        <th colspan="1"><img src="미술공예운동.png"  width="300" height="400"></th>
+        <th colspan="1"><br><h3>Arts and Crafts Movement <br>1880 - 1920</h3></th>
+        <th colspan="1">기계 만능주의에 대한 반발로 일어난 최초의 근대 디자인 개혁 운동. <br>기계 생산품을 비판하며 중세 장인의 수공예 가치 부활을 주장했고,
+        <br>'생활 속의 예술'을 강조하며 디자인의 사회적 역할을 제시했습니다.</th></tr><br><br>
+
+        <tr>
+        <th colspan="1"><img src="아르누보.jpg"  width="300" height="300"></th>
+        <th colspan="1"><br><h3>Art Nouveau <br>1890 - 1910</h3></th>
+        <th colspan="1">'새로운 예술'을 의미하며, 과거 양식에서 벗어나 <br>시대정신을 담은 새로운 스타일을 창조.식물의 덩굴, 꽃, 곤충 등 <br>자연의 유기적인 형태에서 영감을 얻은 유려하고 화려한 곡선이 특징이며,
+        <br>예술과 디자인, 생활의 통합을 시도했습니다.</th></tr><br><br>
+
+        <tr>
+        <th colspan="1"><img src="바우하우스.jpg"  width="300" height="400"></th>
+        <th colspan="1"><br><h3>Modernism, Bauhaus <br>c. 1920s - 1960s</h3></th>
+        <th colspan="1">20세기 디자인을 정의한 가장 중요하고 영향력 있는 사조. <br>제1차 세계대전 이후, 과거의 장식주의를 비합리적이라 비판하며
+        <br>원, 사각형 등 단순한 기하학적 형태, <br>대량생산을 위한 표준화된 디자인을 추구했습니다.</th></tr><br><br>
+
+        <tr>
+        <th colspan="1"><img src="포스트모더니즘.jpg"  width="300" height="300"></th>
+        <th colspan="1"><br><h3>postmodernism<br>c. 1970s - 1990s</h3></th>
+        <th colspan="1">기능만을 강조하며 획일화된 모더니즘의 엄격함에 대한 반발로 등장. <br>역사적 양식을 유머러스하게 인용하거나, 기능과 무관한 
+        <br>화려한 색상과 장식을 적극적으로 사용하며 다양성을 추구했습니다.</th></tr><br><br>
+
+        <tr>
+        <th colspan="1"><img src="현재.png"  width="300" height="200"></th>
+        <th colspan="1"><br><h3>c. 1990s - Present</h3></th>
+        <th colspan="1">개인용 컴퓨터(PC)와 인터넷의 등장은 디자인의 장을 스크린으로 옮겨왔습니다. <br>월드 와이드 웹(WWW)의 보급으로 웹 디자인 분야가 탄생했고,
+        <br>스마트폰의 등장으로 디자인의 핵심이 UX/UI로 이동했습니다. <br> 현재는 AI를 디자인 과정에 활용하는 새로운 시도가 이어지고 있습니다.</th></tr><br><br>
+      </table></div><br><br><br>
+                
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Design 101. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
