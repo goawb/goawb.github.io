@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif; 
+    background-color: #FFFFFF; 
+    color: #212529; 
+    line-height: 1.6; 
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.container {
+    max-width: 1140px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #e9ecef; 
+}
+
+header .container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: 700; 
+}
+
+header nav ul {
+    list-style: none; 
+    display: flex; 
+    gap: 25px; 
+}
+
+header nav a {
+    font-size: 16px;
+    font-weight: 400; 
+    transition: color 0.3s ease; 
+}
+
+header nav a:hover {
+    color: #FF4500; 
+}
+
+/* 현재 페이지 표시 (나중에 다른 페이지 만들 때 사용) */
+header nav a.active {
+    color: #FF4500;
+    font-weight: 700;
+}
+
+
+
+.photo-container {
+  display: flex; 
+  justify-content: flex-end; 
+  gap: 20px; 
+}
+
+
+.photo-container img {
+  width: 20%; 
+  height: auto; 
+}
+
+.hero {
+    padding: 100px 0; 
+    text-align: left; 
+}
+
+.hero .container {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.hero-title {
+    font-size: 150px; 
+    font-weight: 700;
+    color: #FF4500; 
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+h4{
+    font-size: 40px; 
+    font-weight: 700;
+    color: #212529; 
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    padding: 40px 0;
+    background-color: #f8f9fa; 
+    text-align: center;
+    color: #6c757d;
+    font-size: 14px;
+    border-top: 1px solid #e9ecef;
+}
+
+
+@media (max-width: 768px) {
+    .guide .container {
+        flex-direction: column; 
+    }
+    .guide-box {
+        width: 100%; 
+    }
+    .hero-title {
+        font-size: 60px; 
+    }
+}
+    </style>
+    <title>Design 101</title>
+</head>
+<body>
+  
+
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="index.html"class="active">Design 101</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="fundamentals.html">Fundamentals</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="process.html">Process</a></li>
+                    <li><a href="casestudy.html">Case study</a></li>
+                    <li><a href="library.html">Library</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+  <div class="photo-container">
+  <img src="디자인2.png"  alt="첫 번째 사진">
+  <img src="디자인.jpg"  alt="두 번째 사진">
+  <img src="디자인3.jpg"  alt="세 번째 사진">
+</div>
+        
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero-title">Design</h2> <h4 class="hero-tagline">___ &nbsp;all about design</h4>
+            </div>
+        </section>
+
+        
+       
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Design 101. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

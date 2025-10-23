@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body{text-align: center;}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif; 
+    background-color: #FFFFFF; 
+    color: #212529; 
+    line-height: 1.6; 
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.container {
+    max-width: 1140px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #e9ecef; 
+}
+
+header .container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: 700; 
+}
+
+header nav ul {
+    list-style: none; 
+    display: flex; 
+    gap: 25px; 
+}
+
+header nav a {
+    font-size: 16px;
+    font-weight: 400; 
+    transition: color 0.3s ease; 
+}
+
+header nav a:hover {
+    color: #FF4500; 
+}
+
+/* 현재 페이지 표시 (나중에 다른 페이지 만들 때 사용) */
+header nav a.active {
+    color: #FF4500;
+    font-weight: 700;
+}
+
+.photo-container1 {
+  display: flex; 
+  justify-content: flex-start;
+}
+
+.photo-container2 {
+  display:flex; 
+  justify-content: center;
+  align-items: center;
+  
+}
+
+h2{color: #FF4500}
+
+table, tr, th, td{
+            border: dotted 2px #ffffff;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+
+footer {
+    padding: 40px 0;
+    background-color: #f8f9fa; 
+    text-align: center;
+    color: #6c757d;
+    font-size: 14px;
+    border-top: 1px solid #e9ecef;
+}
+
+
+@media (max-width: 768px) {
+    .guide .container {
+        flex-direction: column; 
+    }
+    .guide-box {
+        width: 100%; 
+    }
+    .hero-title {
+        font-size: 60px; 
+    }
+}
+    </style>
+    <title>Design 101</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Design 101</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="fundamentals.html" class="active">Fundamentals</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="process.html">Process</a></li>
+                    <li><a href="casestudy.html">Case study</a></li>
+                    <li><a href="library.html">Library</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    
+  <div class="photo-container1">
+  <img src="작업 (1).jpg" width="1920" height="450"></div><br><br><h2>디자인이란?</h2><br>
+  <p>디자인(Design)은 '주어진 목적을 달성하기 위해, <br>여러 조형 요소를 계획하고 구성하는 창조적 활동'을 의미합니다. <br>단순히 '아름답게 꾸미는 것'을 넘어, 특정 문제를 해결하고 <br>사용자의 필요를 충족시키기 위한 구체적인 계획이자 그 실행 과정 전체를 포함합니다.</p><br><br><br><br>
+  
+  
+  <div class="photo-container2">
+  <img src="종류.png" width="1920" height="300"></div><br><br><h2>디자인의 종류</h2><br><br>
+
+  <table>
+        <tr>
+        <th colspan="1">1. 시각디자인</th><th colspan="1">2. 산업디자인</th><th colspan="1">3. 공간디자인</th><th colspan="1">4. 디지털미디어디자인</th>
+        </tr>
+        <tr>
+            <td>정보를 시각적으로 구성하여 효과적으로 전달하며 <br>그래픽, 패키지, 타이포그래피 등의 분야를 다룹니다.</td>
+            <td>형태와 기능에 각별한 주의를 기울여서 제조되는 <br>제품과 디바이스, 서비스를 전문적으로 개발하는 분야입니다.</td>
+            <td>사람이 생활하거나 활동하는 공간을 목적에 맞게 설계하고 <br> 구성하며 인테리어부터 환경이나 조경까지 다양하게 다룹니다.</td>
+            <td>디지털 환경과 기술을 활용하여 시각적 콘텐츠를 기획, 제작, 디자인하며 <br>UX/UI, 웹디자인, 모션그래픽 등의 분야를 다룹니다.</td>
+        </tr>
+  </table><br><br><br>
+
+ <footer>
+        <div class="container">
+            <p>&copy; 2025 Design 101. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
