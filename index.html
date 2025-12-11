@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .clear{
+            clear: both;
+        }
+        body{
+            font-family: '맑은고딕';
+            font-size: 14px;
+            color: #444444;
+        }
+         li{
+            list-style-type: none;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            margin: 0 auto;
+            background-color: #A6A6A6;
+            
+        }
+        #logo{
+            float: left;
+            margin: 25px 0 0 40px;
+        }
+        #main_menu{
+            float: right;
+            margin-right: 35px;
+            font-family: '맑은 고딕';
+            font-size: 20px;
+            color: #FDFFBD;
+        }
+        #main_menu li{
+            float: left;
+            display: inline;
+            margin-left: 80px;
+            margin-right: 10px;
+            margin-top: 35px;
+        }
+        #main_menu a {
+            text-decoration: none; 
+            color: #FDFFBD; 
+            font-weight: bold; 
+        }
+        #main_menu a:hover{
+            text-decoration: none;
+            color: #3c3c3c;
+        }
+        #main_menu a.active{
+            text-decoration: underline;
+            color:#FDFFBD;
+        }
+        #contents{
+            width: 1140px;
+            height: 1150px;
+            margin: 0 auto;
+            
+        }
+        aside{
+            width: 234px;
+            float: left;
+            text-align: center;
+            padding-top: 50px;
+            border-right: 1px solid #e3e3e3;
+            border-left: 1px solid #e3e3e3; 
+            height: 100%; 
+            box-sizing: border-box;
+        }
+        .profile_img {
+            width: 140px;
+            height: 140px;
+            margin: 0 auto;     
+            margin-bottom: 25px;
+            overflow: hidden;   
+        }
+        .name {
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .slogan {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 5px;
+       }
+       .links a {
+           font-size: 13px;
+           color: #bbb;
+           text-decoration: none;
+        }
+        #main_contents{
+            width: 880px;
+            float: right;
+        }
+        .post_item {
+            width: 100%;
+            padding: 30px 0;          
+            border-bottom: 1px solid #e3e3e3; 
+            overflow: hidden;
+            margin: 0 0 0 30px;        
+        }
+        .post_item:first-child {
+            border-top: 1px solid #e3e3e3;
+            margin-top: 50px;
+        } 
+        .post_thumb {
+            width: 200px;            
+            height: 150px;           
+            float: left;              
+            margin-right: 40px;       
+            background-color: #eee;
+            overflow: hidden;   
+        }
+        .post_thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;        
+        }
+        .post_thumb:hover img {
+            transform: scale(1.1); 
+            cursor: pointer;       
+        }
+        .post_info {
+            float: left;              
+            width: 600px;             
+            margin-top: 10px;        
+        }
+        .post_info h3 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;      
+        }
+        .post_info p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;}
+        
+         footer{
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+            background-color: #dadada;
+            text-align: center;
+        }
+        
+        @media (max-width: 1200px) {
+    
+        #contents {
+            flex-direction: column;
+            width: 100%;
+        }
+        aside, #main_contents {
+            width: 100%;
+            padding-left: 0;
+        }
+        aside {
+            border-right: none; 
+            border-left: none;
+            border-bottom: 1px solid #eee;
+            height: auto; 
+            padding-bottom: 30px; 
+            margin-bottom: 0;
+        }
+        #main_contents h1 {
+            margin-top: 30px; 
+        }
+        header { 
+            height: auto; 
+            text-align: center; 
+            padding-bottom: 20px; 
+        }
+        #logo, #main_menu, #main_menu li { 
+            float: none; 
+            display: inline-block; 
+        }
+        #logo { 
+            display: block; 
+            margin: 20px auto; 
+        }
+        }  
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+        <a href="index.html"><img src="로고.png" height="50"></a>
+        </div>
+        <nav>
+        <ul id="main_menu">
+                <li><a href="prologue.html">Prologue</a></li>
+                <li><a href="daily.html">Daily</a></li>
+                <li><a href="flea_Market.html">Flea Market</a></li>
+                <li><a href="playlist.html">Playlist</a></li>
+                <li><a href="archive.html">Archive</a></li>
+        </ul>
+        </nav>
+    </header>
+
+
+    <section id="contents">
+
+    <aside>
+    <div class="profile_img">
+        <img src="Ellipse 5.png" height="120">
+        </div>
+
+    <div class="profile_info">
+        <h2 class="name">goawb</h2>
+        <p class="slogan">Move on now <br><br> goawb님의 블로그입니다.</p>
+        
+        
+        <p class="links">
+            <a href="https://github.com/">Github</a> · <a href="https://www.instagram.com/">Instagram</a>
+        </p>
+    </div>
+</aside>
+
+    <div id="main_contents">
+        <div class="post_item">
+        <div class="post_thumb">
+            <img src="인덱스1.jpg">
+        </div>
+        <div class="post_info">
+            <h3>[Prologue]</h3>
+            <p>*** 블로그 소개글입니다. <br> 저의 일상과 취향을 기록하는 공간입니다.</p>
+        </div>
+    </div>
+
+    <div class="post_item">
+        <div class="post_thumb">
+            <img src="인덱스2.jpg">
+        </div>
+        <div class="post_info">
+            <h3>[Daily]</h3>
+            <p>일상 속 순간을 소개합니다. <br> 2025.07 ~</p>
+        </div>
+    </div>
+
+    <div class="post_item">
+        <div class="post_thumb">
+            <img src="인덱스3.jpg">
+        </div>
+        <div class="post_info">
+            <h3>[Flea Market]</h3>
+            <p>소장품 판매 목록입니다. <br> 아끼던 물건들을 새로운 주인에게 보냅니다.</p>
+        </div>
+    </div>
+
+    <div class="post_item">
+        <div class="post_thumb">
+            <img src="인덱스4.jpg">
+        </div>
+        <div class="post_info">
+            <h3>[Playlist]</h3>
+            <p>반복되는 하루에 리듬을 더합니다.</p>
+        </div>
+    </div>
+
+    <div class="post_item">
+        <div class="post_thumb">
+            <img src="인덱스5.png">
+        </div>
+        <div class="post_info">
+            <h3>[Archive]</h3>
+            <p>저의 작업물을 소개합니다.</p>
+        </div>
+    </div>
+
+    </div>
+    </section>
+    <div class="clear"></div> <!--float 속성 해제-->
+
+    <footer>
+        <p>© ***Blog. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
